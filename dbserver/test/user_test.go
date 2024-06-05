@@ -35,7 +35,7 @@ func TestUpdateUser(t *testing.T) {
 		Username: "hetao",
 		Password: "03220410Az",
 		Email:    "15180190053@example.com",
-		Phone:    "456asda",
+		Phone:    "456asds",
 	}
 	// 调用CreateUser函数并检查错误
 	dbserver.UpdateUser(testUser)

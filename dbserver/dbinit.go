@@ -30,7 +30,7 @@ func InitDB() (*gorm.DB, error) {
 	}
 	// 自动迁移模式，根据模型创建表
 	// 注意：在生产环境中，通常使用迁移工具来管理数据库结构
-	db.AutoMigrate(&conf.User{})
+	db.AutoMigrate(&conf.User{}, &conf.Product{}, &conf.Order{})
 
 	return db, nil
 }
